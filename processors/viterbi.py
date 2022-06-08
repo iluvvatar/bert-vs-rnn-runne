@@ -1,10 +1,9 @@
 import os
 from pathlib import Path
 
-from mlpipeline.datasets import NEREL
-from mlpipeline.processors.labelizers import BILOULabelizer
-from mlpipeline.processors.collators import MaxLenSplitCollator
-from mlpipeline.processors.prediction_postprocessors import Viterbi
+from mlpipeline.datasets.nlp import NEREL
+from mlpipeline.processors.nlp.labelizers import BILOULabelizer
+from mlpipeline.processors.nlp.prediction_postprocessors import Viterbi
 
 
 def main():
